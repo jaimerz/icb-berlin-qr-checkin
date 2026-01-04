@@ -1,19 +1,18 @@
+# IBC Berlin QR Check-In
 
-# Camp QR Check-In
+A web app for managing school or church years and tracking student movements via QR code scanning. Designed for real-time check-ins and class management, this app helps school or church leaders and admins efficiently monitor where students are throughout the year.
 
-A web app for managing camp events and tracking participant movements via QR code scanning. Designed for real-time check-ins and break-out group management, this app helps camp leaders and admins efficiently monitor where participants are throughout the camp.
-
-[View the App](https://camp-qr-checkin.web.app)
+[View the App](https://icb-berlin-qr-checkin.web.app)
 
 ## Features
 
-- 📅 Multi-year event management
-- 📋 Participant import, management, and QR code generation
-- 📍 Real-time participant location tracking
-- 🔄 QR code scanning for activity check-ins and returns
+- 📅 Multi-year school or church year management
+- 📋 Student import, management, and QR code generation
+- 📍 Real-time student location tracking
+- 🔄 QR code scanning for class check-ins and returns
 - 🛠️ Admin and Leader role-based access
 - 🖨️ Customizable QR badge downloads (PDF & ZIP)
-- 📝 Activity management with live updates
+- 📝 Class management with live updates
 - 🔒 Firebase authentication and security rules
 - ☁️ Hosted on Firebase Hosting with GitHub Actions for deployment
 
@@ -59,8 +58,8 @@ A web app for managing camp events and tracking participant movements via QR cod
 ### Installation
 1. Clone the repo:
    ```bash
-   git clone https://github.com/jaimerz/camp-qr-checkin.git
-   cd camp-qr-checkin
+   git clone https://github.com/jaimerz/icb-berlin-qr-checkin.git
+   cd icb-berlin-qr-checkin
    ```
 
 2. Install dependencies:
@@ -92,21 +91,21 @@ Firebase is used for hosting, database, and authentication. Separate preview and
 ## Roles and Access
 
 - **Admins** can:
-  - Manage events, activities, and participants
-  - Import participants via CSV
+  - Manage years, classes, and students
+  - Import students via CSV
   - Generate QR badges (PDF/ZIP)
-  - Monitor live participant status
+  - Monitor live student status
 - **Leaders** can:
-  - Scan participants to track movement
-  - View participant locations
+  - Scan students to track movement
+  - View student locations
 
 ---
 
 ## Key Workflows
 
-- **Participant Management:** Add individually or import via CSV. Each participant has a deterministic QR code based on their name, church, and event ID.
-- **Scanning Flow:** Leaders scan participants when they leave or return. Scans update the participant’s current location in real time.
-- **Activity Logs:** Each movement is logged, including who performed the scan.
+- **Student Management:** Add individually or import via CSV. Each student has a deterministic QR code based on their name, church, and year ID.
+- **Scanning Flow:** Leaders scan students when they leave or return. Scans update the student’s current location in real time.
+- **Class Logs:** Each movement is logged, including who performed the scan.
 - **Badge Export:** QR codes can be exported as printable PDFs or ZIP files with individual QR images.
 
 ---
@@ -114,10 +113,10 @@ Firebase is used for hosting, database, and authentication. Separate preview and
 ## Roadmap
 
 - [x] Admin and Leader role separation
-- [x] Activity management page
-- [x] Bulk import participants
+- [x] Class management page
+- [x] Bulk import students
 - [x] PDF and ZIP QR code export with customization
-- [x] Real-time participant location dashboard
+- [x] Real-time student location dashboard
 - [ ] Multi-database support (preview vs. production)
 - [ ] Enhanced error handling and confirmation flows
 - [ ] UI/UX improvements for mobile
@@ -142,4 +141,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## Special Thanks
 
-Built with love for camp communities ❤️ Special thanks to all leaders, admins, and testers who contributed to shaping this project.
+Built with love for school and church communities ❤️ Special thanks to all leaders, admins, and testers who contributed to shaping this project.
