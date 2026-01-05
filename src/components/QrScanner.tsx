@@ -212,7 +212,7 @@ const QrScanner: React.FC<QrScannerProps> = ({
           <CardTitle className="text-center">
             {scanType === 'departure'
               ? `Scan QR to register for ${selectedActivity?.name || 'activity'}`
-              : 'Scan QR to return to camp'}
+              : 'Scan QR to check out'}
           </CardTitle>
         </CardHeader>
         <CardContent className="p-0">

@@ -216,7 +216,7 @@ const QrScannerPage: React.FC = () => {
 
               {scanType === 'departure' && (
                 <Select
-                  label="Activity"
+                  label="Class"
                   id="activity"
                   value={selectedActivityId}
                   onChange={(e) => setSelectedActivityId(e.target.value)}
